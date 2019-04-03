@@ -118,7 +118,7 @@ gce_shiny_addapp <- function(instance, app_image, dockerfolder = NULL){
   
   container <- docker_run(instance, 
                           image = image_tag, 
-                          name = "shinyserver", 
+                          name = "shiny", 
                           detach = TRUE, 
                           docker_opts = '-p 80:3838')
 
